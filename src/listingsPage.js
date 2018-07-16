@@ -4,8 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import {ListGroup, ListGroupItem} from 'reactstrap';
 import ListingItem from './listItem';
-import {Link} from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 import sampleJSON from './data/data.json';
+import BusinessPage from './businessPage';
 
 class ListPage extends Component {
 
@@ -46,6 +47,7 @@ class ListPage extends Component {
 
         let listings = this.state.listings;
 
+        console.log(this.props.match.url)
         return (
             <div className={"listingPages"}>
                 <ListGroup>
@@ -53,7 +55,7 @@ class ListPage extends Component {
                         this.state.listings.map((listing) => {
                                 return (
                                     <div key={listing['title']}>
-                                        <Link to={'listing/' + listing['title']}>
+                                        <Link to={'/listing/' + listing['title']}>
                                             <ListGroupItem action>
                                                 <ListingItem venue={listing}/>
                                             </ListGroupItem>
