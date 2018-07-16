@@ -47,7 +47,7 @@ class ListPage extends Component {
 
         let listings = this.state.listings;
 
-        console.log(this.props.match.url)
+        // console.log(this.props.match.url)
         return (
             <div className={"listingPages"}>
                 <ListGroup>

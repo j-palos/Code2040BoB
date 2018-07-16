@@ -3,6 +3,7 @@ import logo from './resist_circle.svg';
 import './App.css';
 import {Button} from 'reactstrap';
 import BackgroundImage from 'react-background-image-loader';
+import {Link} from 'react-router-dom' ;
 
 class LandingPage extends Component {
 
@@ -37,7 +38,9 @@ class LandingPage extends Component {
                 <br></br><br></br>
                 <br></br>
                 <div className="button-container">
-                    <Button outline color="primary" size="lg">ENTER</Button>{' '}
+                        <Link to={"/listing"}>
+                    <Button outline color="primary" size="lg">ENTER</Button>
+                        </Link>
                 </div>
                 <br></br>
                 <br></br>
