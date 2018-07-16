@@ -3,23 +3,57 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 200px;
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 5.5em;
+  font-family: myFont;
+  position: absolute;
+  top: 60px;
+  left: 700px;
+  color: white;
 }
 
 .App-intro {
   font-size: large;
+  color: white;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("./fonts/BebasNeue Bold.otf");
+  font-weight: normal;
+}
+
+.button-container{
+  position: relative;
+  top: 50%;
+}
+
+.img-content{
+  position: absolute;
+  top: 10px;
+  right: 70px;
+}
+
+.jumbotron {
+  background-image: url("./images/backImage2.jpg");
+  background-color: #17234E;
+  margin-bottom: 0;
+  min-height: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
